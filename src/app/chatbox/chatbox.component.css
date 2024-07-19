@@ -1,0 +1,16 @@
+main {
+    padding: 1vh 0;
+}
+
+.chatbox {
+    border: 1px solid black;
+    width: 50vw;
+    height: 50vh;
+    margin-bottom: 1vh;
+}
+
+.chat-input  {
+    input {
+        width: 30vw;
+    }
+}
