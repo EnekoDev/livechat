@@ -1,14 +1,9 @@
 <main>
     <div class="chatbox">
-        
+        <div *ngFor="let message of messages">{{ message }}</div>
     </div>
-    <div class="chat-input">
-        @if (checkUsername()) {
-            <input type="text" name="message" placeholder="Say something!" [(ngModel)]="message">
-            <button (click)="sendMessage()">Send</button>
-        } @else {
-            <input type="text" name="username" placeholder="What's your name?" [(ngModel)]="username">
-            <button (click)="setUsername()">Set username</button>
-        }
-    </div>
+    <form class="chat-input">
+        <input type="text" name="message" placeholder="Say something!" [(ngModel)]="newMessage" class="text-box">
+        <input type="submit" value="Send" (click)="sendMessage()" />
+    </form>
 </main>

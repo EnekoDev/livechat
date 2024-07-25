@@ -9,8 +9,6 @@ main {
     margin-bottom: 1vh;
 }
 
-.chat-input  {
-    input {
-        width: 30vw;
-    }
+.text-box  {
+    width: 30vw;
 }
